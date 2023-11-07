@@ -1,0 +1,60 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 10px
+    ;
+    padding: 5%;
+  }
+
+  .wrapper {
+    position: relative;
+  }
+  
+  .dashed-box {
+    position: relative;
+    z-index: 1;
+    border: dashed;
+    height: 8em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    background-color: brown;
+  }
+  .dashed-box {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: brown;}
+    
+  .gold-box {
+    position: absolute;
+    z-index: 2; 
+    background: gold;
+    width: 80%;
+    left: 60px;
+    top: 3em;
+  }
+
+  .two {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: teal;
+  }
+  .three {background-color: teal;}
+  .green-box {
+    position: absolute;
+    z-index: 2; /* put .green-box above .dashed-box */
+    background: lightgreen;
+    width: 20%;
+    left: 65%;
+    top: -25px;
+    height: 7em;
+    opacity: 0.9;
+  }
+  @media(max-width: 900px){
+
+    div {
+      padding:0px;
+    }
